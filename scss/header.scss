@@ -1,0 +1,27 @@
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    height: 88px;
+    margin-top: -8px;
+    background-color: red;
+
+    .logo{
+        display:flex;
+    }
+    .login{
+        display:flex;
+        width: 100px;
+        margin-right: 3%;
+    }
+    .exit{
+        display:flex;
+        width: 100px;
+
+    }
+    .menu{
+        display:flex;
+
+    }
+
+    }

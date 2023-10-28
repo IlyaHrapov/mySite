@@ -1,0 +1,34 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 88px;
+  margin-top: -8px;
+  background-color: red;
+}
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  margin-right: 3%;
+}
+.header .exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
