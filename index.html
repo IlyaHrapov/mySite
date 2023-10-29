@@ -4,110 +4,78 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style/menu.css">
     <link rel="stylesheet" type="text/css" href="style/header.css">
     <link rel="stylesheet" type="text/css" href="style/button.css">
     <link rel="stylesheet" type="text/css" href="style/container.css">
-    <link rel="stylesheet" type="text/css" href="style/section.css">
+    <link rel="stylesheet" type="text/css" href="style/content.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" type="text/css" href="style/fonts.css">
-	<title>Системный Администратор</title>
+    <link rel="stylesheet" type="text/css" href="style/comments.css">
+	<title>Сайт со статьями</title>
 </head>
 <body>	
 <div class="container">
     <header class="header">
-            <div class="logo">
-                <img src="img/img.png">
+        <div class="header__item">
+            <div class="header__logo">
+                <img src ="img/img.png">
             </div>
-            <div class="menu">
-            <button class="login btn" type="button">Login</button>
-            <button class="exit btn" type="button">exit</button>
+            <div class="header__menu">
+                    <input class="btn btn--small" value ="Login" name="Login" type="button">
+                    <input class="btn btn--small" value="logout" name="Logout" type="button">
+            </div>
         </div>
     </header>
     
     <main class="main">
         <div class="main-section">
-                <div class="main-section__background">
-                <div class="about">
-                    <div class="about__header about_header--red">Профессия</div> 
-                    <div class="about__title about__title--white">СИСТЕМНЫЙ  АДМИНИСТРАТОР</div>
-                    <div class="about__subtitle about__subtitle--white">Незаменимый специалист в любой компании</div>
-                </div>
-                <button class="btn btn--small main-section__btn" type="button">
-                    <div class="btn__text btn__text--small ">Записаться</div>
-                </button>
-                <div class="main-section__properties">
-                    <div class="main-section__propirties-items main-section__propirties-items--white">
-                        <div class="main-section__properties-title">
-                                Стоимость
-                         </div>
-                        <div class="main-section__properties-subtitle">
-                                От 2700р/мес
+                <div class="content" id="1">
+                    <div class="content__article">
+                        <div class="content__author"> Храпов Илья <time datetime="2023-10-29">october, 29</time></div>
+                        <div class="content__header content_header--red">
+                            <div><a href="#">Статья 1</a></div>
                         </div>
-                    </div>
-                    <div class="main-section__propirties-items main-section__propirties-items--white">
-                        <div class="main-section__properties-title">
-                                Продолжительность
+                        <div class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ea delectus itaque vel minima maiores expedita quas, quasi hic, suscipit, voluptatem omnis. Minus obcaecati neque non laboriosam odio explicabo totam!</div>
+                        <form action="#" method="POST">
+                            <input class="comment" placeholder="Оставьте комментарий" maxlength="256">
+                            <input class="btn btn--small" value="отправить" type="submit">
+                        </form>
                         </div>
-                        <div class="main-section__properties-subtitle">
-                                3 месяца
-                        </div>
-                    </div>
-                    <div class="main-section__propirties-items main-section__propirties-items--white">
-                        <div class="main-section__properties-title">
-                                Формат обучения
-                        </div>
-                        <div class="main-section__properties-subtitle">
-                                Очная
-                        </div>
+                        <div class="content__rate">
+                            <div class="content__rate--plus">
+                                <input class="btn btn--rate" value="+" type="button">
+                            </div>
+                            RATE IT!
+                            <div class="content__rate--minus">
+                                <input class="btn btn--rate" value="-" type="button">
+                            </div>
                     </div>
                 </div>
-        </div>
+                <div class="content" id="2">
+                    <div class="content__author"> Храпов Илья <time datetime="2023-10-29">october, 29</time></div>
+                    <div class="content__header content_header--red"><a href="#">Статья 2</a></div> 
+                    <div class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ea delectus itaque vel minima maiores expedita quas, quasi hic, suscipit, voluptatem omnis. Minus obcaecati neque non laboriosam odio explicabo totam!</div>
+                    <form action="#" method="POST">
+                        <input class="comment" placeholder="Оставьте комментарий" maxlength="256">
+                        <input class="btn btn--small" value="отправить" type="submit">
+                    </form>
+                </div>
+                <div class="content" id="3">
+                    <div class="content__author"> Храпов Илья <time datetime="2023-10-29">october, 29</time></div>
+                    <div class="content__header content_header--red"><a href="#">Статья 3</a></div> 
+                    <div class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ea delectus itaque vel minima maiores expedita quas, quasi hic, suscipit, voluptatem omnis. Minus obcaecati neque non laboriosam odio explicabo totam!</div>
+                    <form action="#" method="POST">
+                        <input class="comment" placeholder="Оставьте комментарий" maxlength="256">
+                        <input class="btn btn--small" value="отправить" type="submit">
+                    </form>
+                </div>
                 
-            
-        
-        </div>
-        <div class="section background-clean">
-            <img src="../img/img.png" class="section-img">
-            <div class="content section__content">
-                <div class="content__title content__title--white content__title--big">Кто такой системный администратор</div>
-                
-                <div class="content__article content__article--white content__article--big">Системный администратор обеспечивает бесперебойное функционирование компьютерной техники и программного обеспечения в организации. Он занимается поддержкой серверов, проектирует и администрирует локальную сеть, выдает пользователям доступ к сайтам.</div>
-
-                <div class="content__article content__article--white content__article--big">Сисадмин &mdash; штатный или на аутсорсе &mdash; нужен каждой компании, где есть хотя бы один компьютер, поэтому представители этой профессии не испытывают проблем с трудоустройством.</div>
-        </div>
-        </div>
-        <div class="section background-clean section--light">
-            <div class="content section__content section__content--big">
-                <div class="content__title content__title--white content__title--big">О курсе</div>
-                <div class="content__article content__article--white content__article--big">Курс предназначен для широкого круга слушателей, желающих познакомится с локальными сетями, понять принципы, по которым они работают, получить знания и навыки по их построению. Слушатели также познакомятся с основополагающими принципами работы ОС Windows в локальной сети. Курс является базовым в обучении технических специалистов и предполагает обучение фундаментальным принципам построения локальных сетей.</div>
-            </div>
-        </div>
-        <div class="section background-clean section--light section--adjacent">
-            <div class="content section__content section__content--small ">
-                <div class="content__title content__title--white content__title--big">Выдаваемый документ</div>
-                <div class="content__article content__article--white content__article--small">Диплом о профессиональной переподготовке с присвоением квалификации</div>
-            </div>
-            <button class="btn btn--big section__btn" type="button">
-                <div class="btn__text btn__text--middle btn__text--uppercase">Сайт образовательного центра</div>
-            </button>
         </div>
        
 </main>
-    <div class="footer background-clean">
-        <div class="footer__social">
-            <ul class="menu__list">
-                <li class="menu__item footer__menu-item"><a href="#" class="menu__link"><div class="img-fb"></div></a></li>
-                <li class="menu__item footer__menu-item "><a href="#" class="menu__link"><div class="img-vk"></div></a></li>
-                <li class="menu__item footer__menu-item"><a href="#" class="menu__link"><div class="img-yt"></div></a></li>
-            </ul>
-        </div>
+    <div class="footer">
         <div class="footer__info">
-            <ul class="menu__list">
-                <li class="menu__item footer__menu-item footer__menu-item--small footer__menu-item--width footer__menu-item-info">098773 Санкт Петеребург, ул. Бассейная, д 23</li>
-                <li class="menu__item footer__menu-item footer__menu-item--small footer__menu-item-info"><a href="#" class="menu__link">sys-adm@gmail.com</a></li>
-                <li class="menu__item footer__menu-item footer__menu-item--small footer__menu-item-info"><a href="#" class="menu__link">8-800-321-43-23</a></li>
-            </ul>
+            &copy 2023г
         </div>
     </div>
 </div>
