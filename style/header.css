@@ -5,8 +5,12 @@
   height: 88px;
   background-color: red;
 }
+.header__logo{
+  display: flex;
+    height: 80px;
+}
 
-.header__logo {
+.header__logo > a{
   display: flex;
     height: 80px;
 }
